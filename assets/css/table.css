@@ -1,0 +1,129 @@
+/* body {
+    background-color: #111;
+    font-family: "Calibri";
+}
+
+h2 {
+    color: white;
+}
+
+.attendanceResults {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+
+.attendanceResults__row {
+    color: white;
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 8px;
+    height: 25px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    transition: all .5s ease;
+}
+
+.attendanceResults__row.show {
+    height: 200px;
+}
+
+.more {
+    cursor: pointer;
+}
+
+.attendanceResults__row .overview {
+    font-weight: 600;
+    height: 40px;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.attendanceResults__row .moreDetails {
+    max-height: max-content;
+    color: rgba(255, 255, 255, .8);
+} */
+
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attendanceResults {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.attendanceResults__row {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.attendanceResults__row:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.attendanceResults__row .overview {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attendanceResults__row .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.attendanceResults__row .more {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.attendanceResults__row .more:hover {
+    text-decoration: underline;
+}
+
+.attendanceResults__row .moreDetails {
+    padding: 20px;
+    display: none;
+}
+
+.attendanceResults__row.show .moreDetails {
+    display: block;
+}
+
+.attendanceResults__row ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.attendanceResults__row li {
+    margin-bottom: 10px;
+    color: #555;
+}
